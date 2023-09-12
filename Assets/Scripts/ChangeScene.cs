@@ -18,4 +18,9 @@ public class ChangeScene : MonoBehaviour
         animator.SetTrigger("fadein");
         StartCoroutine(StartGame());
     }
+
+    public void loadNewScene(int sceneId)
+    {
+        SceneManager.LoadScene(sceneId);
+    }
 }
